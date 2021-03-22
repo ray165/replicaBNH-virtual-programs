@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Virtual Programs</title>
+  <!--Page made by Ray -->
+  <!-- Using Bootstrap 5-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="vp.css">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="main.html">Home Button</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- // no content yet -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Volunteer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Employment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Donate</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid">
+    <img src="static/bnh-logo.png" class="rounded mx-auto d-block " alt="logo of BNH">
+    <div class="container" id="contentContainer">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="children-tab" data-bs-toggle="pill" data-bs-target="#children"
+            type="button" role="tab" aria-controls="children" aria-selected="true">Children</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="youth-tab" data-bs-toggle="pill" data-bs-target="#youth" type="button" role="tab"
+            aria-controls="youth" aria-selected="false">Youth</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="adults-tab" data-bs-toggle="pill" data-bs-target="#adults" type="button"
+            role="tab" aria-controls="adults" aria-selected="false">Adults</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="seniors-tab" data-bs-toggle="pill" data-bs-target="#seniors" type="button"
+            role="tab" aria-controls="seniors" aria-selected="false">Seniors</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="family-tab" data-bs-toggle="pill" data-bs-target="#family" type="button"
+            role="tab" aria-controls="family" aria-selected="false">Family</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="children" role="tabpanel" aria-labelledby="children-tab">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="childOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChildOne"
+                  aria-expanded="true" aria-controls="collapseChildOne">
+                  Drawing Class for Kids (Online)
+                </button>
+              </h2>
+              <div id="collapseChildOne" class="accordion-collapse collapse show" aria-labelledby="childOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Does your child like to draw? Nurture their creativity through our free Virtual Drawing Class for
+                  Kids. Give your child a fun and interactive group experience, led by our engaging art instructor,
+                  Saba, and all from the comfort of your own home!
+
+                  This class is intended for children ages 4-7 and all skill levels are welcome. Click here for the
+                  program poster.
+
+                  For more information, please email northinfo@burnabynh.ca or call 604-294-5444.
+
+                  <div class="container bg-light text-center eventDetails">
+                    <strong class="date">Tuesdays from 4:00 PM – 4:45 PM (March 2 to April 6, 2021)</strong>
+                    <div class="row instruct">
+                      Once you register with our online class, you will receive a confirmation email containing
+                      information about joining the meeting.
+                    </div>
+                    <div class="row">
+                      <a type="button" class="btn btn-primary btn-sm regButton"
+                        href="https://us02web.zoom.us/meeting/register/tZErduyprj4oE9Nk2heGl__jAdlFwNFfDmLU">Register
+                        Now!</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="childTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChildTwo"
+                  aria-expanded="true" aria-controls="collapseChildTwo">
+                  The Newcomer Learning Club! (Online)
+                </button>
+              </h2>
+              <div id="collapseChildTwo" class="accordion-collapse collapse show" aria-labelledby="childTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  The Learning Club is a free online program for newcomer elementary students in Grades 2–7 who may need
+                  additional learning support. This program provides assistance with fun literacy activities and
+                  academic support to help children reach their full potential (in education and life). Come join us
+                  each week to learn, experiment and grow!
+
+                  For more information, please contact Amal Ballu at amalb@burnabynh.ca or call 236-877-2517 or see
+                  poster for more details.
+
+                  <div class="container bg-light text-center eventDetails">
+                    <strong class="date">Mondays (Grades 2-4) from 5:30 PM – 6:30 PM (January 11 to March 29, 2021)</strong>
+                    <div class="row instruct">
+                      Please email amalb@burnabynh.ca or call 236-877-2517 for more information or to register.
+                    </div>
+                    <div class="row">
+                      <strong class="date">Tuesdays (Grade 5-7) from 5:30 PM – 6:30 PM (January 12 to March 30, 2021)</strong>
+                      <div class="row instruct">
+                        Please email amalb@burnabynh.ca or call 236-877-2517 for more information or to register.
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- end of accordion -->
+          </div>
+        </div>
+        <div class="tab-pane fade" id="youth" role="tabpanel" aria-labelledby="youth">
+          no?.
+        </div>
+        <div class="tab-pane fade" id="adults" role="tabpanel" aria-labelledby="adults">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Cooking with Frantiska (Online)
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Join us for a fun and hands-on cooking class led by the highly experienced and passionate
+                    cook, Frantiska Cignerova.</strong> In this class you will learn to cook some simple but delicious
+                  dishes, get useful tips and make new friends.
+
+                  These Thursday sessions starting at 10 am, from April 1st, will be for everyone! You can get the
+                  whole
+                  family involved, and all skill levels are welcome! We will have new recipes each session.
+
+                  Recipes will be planned based on ingredients we distribute at our North Food Hub each week. You are
+                  welcome to pick up the ingredients on Tuesdays from 11 am to 4 pm and prepare ingredients prior to
+                  the
+                  Thursday class. You will receive an email with the ingredients, equipment and anything else you
+                  might
+                  need to prepare for a great session with us! See poster for more info.
+
+                  <div class="container bg-light text-center eventDetails">
+                    <strong class="date">Thursdays from 10:00 AM – 10:45 AM (April 1-22, 2021)</strong>
+                    <div class="row instruct">
+                      Once you register with our online class, you will receive a confirmation email containing
+                      information about joining the meeting.
+                    </div>
+                    <div class="row">
+                      <a type="button" class="btn btn-primary btn-sm regButton"
+                        href="https://zoom.us/meeting/register/tJ0ld-ygrzooG9ydTMJ7fIU5bmdGw3O5pgvw">Register Now!</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Art Class (Online)
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Learn valuable art techniques and advance your skills with the help of our experienced instructor,
+                  Ana-Francisca, through this 4-week course. We will cover basic topics such as colour theories, 3D
+                  sketching, composition and perspective. You will learn to appreciate and recognize the beauty of
+                  nature, people, objects, in their natural form. See poster for more info.
+                  <div class="container bg-light text-center eventDetails">
+                    <strong class="date">Mondays from 6:00 PM – 6:45 PM (March 1-22, 2021)</strong>
+                    <div class="row instruct">
+                      Once you register with our online class, you will receive a confirmation email containing
+                      information about joining the meeting.
+                    </div>
+                    <div class="row">
+                      <a type="button" class="btn btn-primary btn-sm regButton"
+                        href="https://us02web.zoom.us/meeting/register/tZAsceGgrD0pGNzuc07nkUZuVurvUyUDK4Qw">Register
+                        Now!</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Lynn’s Cooking Connection – Cook and Chat (Online)
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Join us as we cook together, from the comfort of our own homes! Enjoy some simple recipes and good
+                  conversation. This workshop is recommended for Newcomers, immigrants and refugees. Here are the
+                  recipes for this week (Mar 25): Curried Quinoa Salad with Black Beans and Mango, Jamaican Red Beans
+                  And Rice and Quinoa Pilaf.
+
+                  You can still access our previous recipes including: pineapple upside down cake, pesto sauce Bamiya
+                  (Okra), Pita bread, Hummus, Lentil Soup. Carrot Halawa, Carrot Tachena, Creamy Carrot Soup, Carrot
+                  Tzimmes. French Toast , Peach Compote, Lentil Burgers, Lentil Soup, New England Clam Chowder,
+                  Cranberry Orange muffins, Campbell’s Tuna Noodle Casserole, Stuffed Zucchini Boats, Pumpkin pie,
+                  Thai
+                  pumpkin Coconut Curry and Pork Adobo,
+
+                  For more information or to register, please email Lynn Leong at kitchens@burnabynh.ca or see poster
+                  for more details.
+
+                  <div class="container bg-light text-center eventDetails">
+                    <strong class="date">Thursdays from 10:00 AM – 12:00 PM</strong>
+                    <div class="row instruct">
+                      Please email kitchens@burnabynh.ca or call 604-431-0400 for more info or to register.
+                    </div>
+                    <!-- <div class="row">
+                      <a type="button" class="btn btn-primary btn-sm regButton"
+                        href="https://us02web.zoom.us/meeting/register/tZAsceGgrD0pGNzuc07nkUZuVurvUyUDK4Qw">Register
+                        Now!</a>
+                    </div> -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Qi Gong (Online)
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Discover some basic concepts of Qi (vital life force energy). Qi Gong focuses on breath and movement
+                  to open up the energy flow in the body. These gentle movement routines can add to anyone’s
+                  repertoire
+                  for health, stress management and fitness. These routines even alleviate lower blood
+                  pressure/cholesterol and improves digestion & respiratory conditions. Join us in enhancing your own
+                  awareness about energy! Outdoor Qi Gong is also available on Thursdays.
+
+                  <div class="container bg-light text-center eventDetails">
+                    <strong class="date">Mondays from 2:00 PM – 3:00 PM</strong>
+                    <div class="row instruct">
+                      Once you register with our online class, you will receive a confirmation email containing
+                      information about joining the meeting.
+                    </div>
+                    <div class="row">
+                      <a type="button" class="btn btn-primary btn-sm regButton"
+                        href="https://us02web.zoom.us/meeting/register/tZErf-2vrDotHtHrkm8vkTmVF9WVyR4Oyr8W">Register
+                        Now!</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Yoga (Online)
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Join us for our yoga class (beginner) via Zoom. Certified Yoga teacher, Mayra Chavez, will practice
+                  Pranayama, Asanas and Meditation. You will discover many wonderful yoga poses to incorporate into
+                  your
+                  daily practice. This will re-balance your life, improve your immunity system and increase your
+                  capacity to focus. You will also be able to release your stress and physical tension. Everyone is
+                  welcome!!
+                  <div class="container bg-light text-center eventDetails">
+                    <strong class="date">Thursdays from 10:00 AM – 12:00 PM</strong>
+                    <div class="row instruct">
+                      Please email northinfo@burnabynh.ca or call 604-294-5444 for more info or to register.
+                    </div>
+                    <!-- <div class="row">
+                      <a type="button" class="btn btn-primary btn-sm regButton"
+                        href="https://us02web.zoom.us/meeting/register/tZAsceGgrD0pGNzuc07nkUZuVurvUyUDK4Qw">Register
+                        Now!</a>
+                    </div> -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  English Conversation (Online)
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Our online EAL classes are designed for participants that would like to continue their learning
+                  during
+                  these challenging times. These classes are a fun way to engage in conversation, make new friends and
+                  experience learning online! All our classes are held on Zoom. Don’t worry if you are new to Zoom; we
+                  will help you become a pro in no time!
+
+                  <div class="container bg-light text-center eventDetails">
+                    <strong class="date">Mondays from 1:00 PM – 2:00 PM</strong>
+                    <div class="row instruct">
+                      Once you register with our online class, you will receive a confirmation email containing
+                      information about joining the meeting.
+                    </div>
+                    <div class="row">
+                      <a type="button" class="btn btn-primary btn-sm regButton"
+                        href="https://us02web.zoom.us/meeting/register/tZYkf-urrTMjG9FRlYz5Af1k3UOTy8fZ3u1b">Register
+                        Now!</a>
+                    </div>
+                    <strong class="date">Tuesdays from 6:00 PM – 7:00 PM</strong>
+                    <div class="row instruct">
+                      Once you register with our online class, you will receive a confirmation email containing
+                      information about joining the meeting.
+                    </div>
+                    <div class="row">
+                      <a type="button" class="btn btn-primary btn-sm regButton"
+                        href="https://us02web.zoom.us/meeting/register/tZModu6srDgtG9Hbvric8W4PfPd1o8dIJmGZ">Register
+                        Now!</a>
+                    </div>
+                    <strong class="date">Thursdays from 1:00 – 2:00 PM</strong>
+                    <div class="row instruct">
+                      Once you register with our online class, you will receive a confirmation email containing
+                      information about joining the meeting.
+                    </div>
+                    <div class="row">
+                      <a type="button" class="btn btn-primary btn-sm regButton"
+                        href="https://us02web.zoom.us/meeting/register/tZcqf-GopjksG9N0P_3re1Aj5Tw9ufj-7bDu">Register
+                        Now!</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Computer Support (In-person)
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Would you like to learn how to use email, search the Internet, create files and documents or explore
+                  videoconferencing via Zoom, Jitsi, Callbridge and so much more? Volunteer Computer Instructors are
+                  available to help you In-person with your computer learning needs. We will assist you with your
+                  questions and online application forms. See this poster for more details.
+
+                  <div class="container bg-light text-center eventDetails">
+                    <strong class="date">Wednesdays from 10:00 AM – 2:00 PM (North House)</strong>
+                    <div class="row instruct">
+                      By appointments only. Please email northinfo@burnabynh.ca or call 604-294-5444 for more info or
+                      to
+                      register.
+                    </div>
+                    <div class="row">
+                      <a type="button" class="btn btn-primary btn-sm regButton"
+                        href="https://zoom.us/meeting/register/tJMtdeCtrz8sHNTnOSapbyLGoCKFPmj7WL9U">Register
+                        Now!</a>
+                    </div>
+
+                    <strong class="date">Mondays from 12:00 PM – 2:00 PM (South House)</strong>
+                    <div class="row instruct">
+                      By appointments only. Please email literacy@burnabynh.ca or call 604 396 7307 for more info or
+                      to
+                      register.
+                    </div>
+                    <div class="row">
+                      <a type="button" class="btn btn-primary btn-sm regButton"
+                        href="https://zoom.us/meeting/register/tJIrc-mhrT8rH9JeAzxmpW5oj1paxj_EPyNz">Register
+                        Now!</a>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  Webcafe (Online)
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Would you like to learn how to use email, search the Internet, create files and documents or explore
+                  videoconferencing via Zoom, Jitsi, Callbridge and so much more? Volunteer Computer Instructors are
+                  available to help you online with your computer learning needs. We will assist you with your
+                  questions
+                  and online application forms.
+                  <br />
+                  <strong>Online training:</strong>
+                  <br />
+                  If you are need more help than the support provided at our WebCafe, we will pair you up with a
+                  volunteer who will meet you online to answer your questions. Our volunteers are able to support you
+                  in
+                  English, Cantonese, Farsi, Mandarin, Korean and Punjabi. Please email Rajeeta Samala, Adult Literacy
+                  Program Coordinator, at literacy@burnabynh.ca if you are interested.
+
+                  <div class="container bg-light text-center eventDetails">
+                    <strong class="date">Mondays from 12:00 PM – 2:00 pm</strong>
+                    <div class="row instruct">
+                      Once you register with our online class, you will receive a confirmation email containing
+                      information about joining the meeting.
+                    </div>
+                    <div class="row">
+                      <a type="button" class="btn btn-primary btn-sm regButton"
+                        href="https://zoom.us/meeting/register/tJIrc-mhrT8rH9JeAzxmpW5oj1paxj_EPyNz">Register
+                        Now!</a>
+                    </div>
+
+                    <strong class="date">Thursdays from 3:00 PM – 5:00 pm</strong>
+                    <div class="row instruct">
+                      Once you register with our online class, you will receive a confirmation email containing
+                      information about joining the meeting.
+                    </div>
+                    <div class="row">
+                      <a type="button" class="btn btn-primary btn-sm regButton"
+                        href="https://zoom.us/meeting/register/tJwpd-morTMoHdSXxHU1p3m-Kh3PRj--vmCK">Register
+                        Now!</a>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- item list end -->
+          </div>
+        </div>
+        <div class="tab-pane fade" id="seniors" role="tabpanel" aria-labelledby="seniors">
+          seniors
+        </div>
+        <div class="tab-pane fade" id="family" role="tabpanel" aria-labelledby="family">
+          family
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="bootstrap.js"></script>
+</body>
+
+</html>

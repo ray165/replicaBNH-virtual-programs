@@ -1,0 +1,72 @@
+img {
+  max-width: 100px;
+  height: auto;
+}
+
+body {
+  background-image: url("/static/bg.gif");
+}
+
+#pills-tab {
+  background-color: #dddddd;
+}
+
+#myTab,
+#myTabContent,
+#contentContainer {
+  background-color:#DDDDDD;
+  padding: 0;
+  width: 100%;
+  margin: auto auto;
+}
+
+.eventDetails, .instruct {
+    padding-top: 5%;
+    margin-top: 3%;
+}
+
+.instruct {
+    padding-bottom: 5%;
+}
+
+/* For iphone5 and smaller */
+@media (max-width: 576px) {
+  .nav-item {
+    font-size: xx-small;
+    /* width: ; */
+    height: auto;
+  }
+
+  #myTab,
+  #myTabContent,
+  #contentContainer {
+    /* width: 100%; */
+    margin: auto auto;
+  }
+}
+
+/* Fits most modern phones */
+@media (min-width: 577px) and (max-width: 767px) {
+  .nav-item {
+    font-size: small;
+    width: 20%;
+    height: auto;
+  }
+
+  #myTab,
+  #myTabContent,
+  #contentContainer {
+    width: 100%;
+    margin: auto auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #myTab,
+  #myTabContent,
+  #contentContainer {
+    width: 70%;
+    margin: auto auto;
+  }
+}
+
