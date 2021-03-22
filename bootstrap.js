@@ -1,9 +1,5 @@
-var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
-triggerTabList.forEach(function (triggerEl) {
-  var tabTrigger = new bootstrap.Tab(triggerEl)
+$( document ).ready(function() {
+  console.log( "deployed JS!" );
 
-  triggerEl.addEventListener('click', function (event) {
-    event.preventDefault()
-    tabTrigger.show()
-  })
-})
+  $(".bubble").css("width", "90%");
+});

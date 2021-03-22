@@ -3,6 +3,10 @@ img {
   height: auto;
 }
 
+.bubble {
+  width: 100%;
+}
+
 body {
   background-image: url("/static/bg.gif");
 }
@@ -14,19 +18,20 @@ body {
 #myTab,
 #myTabContent,
 #contentContainer {
-  background-color:#DDDDDD;
+  background-color: #dddddd;
   padding: 0;
   width: 100%;
   margin: auto auto;
 }
 
-.eventDetails, .instruct {
-    padding-top: 5%;
-    margin-top: 3%;
+.eventDetails,
+.instruct {
+  padding-top: 5%;
+  margin-top: 3%;
 }
 
 .instruct {
-    padding-bottom: 5%;
+  padding-bottom: 5%;
 }
 
 /* For iphone5 and smaller */
@@ -42,6 +47,28 @@ body {
   #contentContainer {
     /* width: 100%; */
     margin: auto auto;
+  }
+
+  .googleCalendar {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-bottom: 90%;
+    overflow: hidden;
+  }
+
+  .googleCalendar iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* /resizes the popup! */
+  .bubble {
+    width: 100%;
+    
   }
 }
 
@@ -68,5 +95,7 @@ body {
     width: 70%;
     margin: auto auto;
   }
-}
 
+
+
+}
